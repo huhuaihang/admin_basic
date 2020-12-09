@@ -4,7 +4,8 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic',
+    'id' => 'admin_basic',
+    'name' => '后台管理系统',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -51,6 +52,11 @@ $config = [
             ],
         ],
         */
+    ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\Module'
+        ]
     ],
     'params' => $params,
 ];
