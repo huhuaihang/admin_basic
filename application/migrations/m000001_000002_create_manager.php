@@ -37,7 +37,7 @@ class m000001_000002_create_manager extends Migration
             'auth_key' => Util::randomStr(32, 7),
             'password' => Yii::$app->security->generatePasswordHash('admin'),
             'nickname' => '系统管理员',
-            'mobile' => '00000000000',
+            'mobile' => '1588888888',
             'email' => '***@qq.com',
             'rid' => 1, // manager_role.id
             'status' => 1,

@@ -232,3 +232,14 @@ vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xm
 
 You can see code coverage output under the `tests/_output` directory.
 # admin_basic
+    ```
+
+```flow
+st=>start: 开始
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+&```
